@@ -23,6 +23,13 @@
 * Hoàn thiện các mô tả và thêm mô tả chuỗi. Có thể mô tả được chuỗi dài tùy ý.
 * Và còn nhiều các nâng cấp nhỏ khác mà tôi chưa nhớ hết.
 
+# Thiết lập phần cứng:
+* Sử dụng nguồn cấp 3.3V. (Nếu bạn sử dụng 5V sẽ cần thêm trở và zenner 3.3V để tạo mức logic cho đường
+  tín hiệu USB.
+* PC7 - "D+"
+* PC6 - "D-"
+* Trở kéo 1K5 từ PC6 (D-) lên nguồn (3.3V).
+
 # Các phiên bản project:
 * USB_STM8S_HSI_V1: Phiên bản hỏi vòng USB_Process liên tục trong main giống như phiên bản gốc.
 * USB_STM8S_HSI_V2: USB_Process tự xác định và được gọi một cách đặc biệt giống như một ngắt
