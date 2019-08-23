@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>4081637857</fileChecksum>
+    <fileChecksum>2220289898</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -41,6 +41,7 @@
             <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
             <file>$PROJ_DIR$\User\Inc\main.h</file>
             <file>$PROJ_DIR$\USB\Inc\usb_def.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\USB_STM8_HSI.hex</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\User\Src\main.c</name>
@@ -175,6 +176,10 @@
         <file>
             <name>$PROJ_DIR$\Debug\Exe\USB_STM8_HSI.out</name>
             <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 36</file>
+                </tool>
                 <tool>
                     <name>ILINK</name>
                     <file> 6</file>
