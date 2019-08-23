@@ -24,7 +24,7 @@
 * Và còn nhiều các nâng cấp nhỏ khác mà tôi chưa nhớ hết.
 
 # Thiết lập phần cứng:
-* Sử dụng nguồn cấp 3.3V. (Nếu bạn sử dụng 5V sẽ cần thêm trở và zenner 3.3V để tạo mức logic cho đường
+* Sử dụng nguồn cấp 3.3V. (Nếu bạn sử dụng 5V sẽ cần thêm trở và zener 3.3V để tạo mức logic cho đường
   tín hiệu USB.
 * PC7 - "D+"
 * PC6 - "D-"
