@@ -4,9 +4,9 @@
 
 #include "usb_def.h"
 
-#define USB_VENDOR_ID           0x4186
-#define USB_DEVICE_ID           0x0001
-#define USB_DEVICE_VERSION      0x6655
+#define USB_VENDOR_ID           0x1234
+#define USB_DEVICE_ID           0x5678
+#define USB_DEVICE_VERSION      0x9012
 
 static const unsigned char usb_device_descriptor[] = {
   18, 										// Size of the Descriptor in Bytes
