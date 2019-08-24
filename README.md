@@ -14,7 +14,7 @@
 * Cố định địa chỉ của chức năng usb_rx và usb_tx giúp chương trình chạy ổn định, không bị thay đổi thời
   gian thực thi khi thay đổi các phần khác của chương trình. Để làm được điều này tôi đã thay đổi
   tệp linker mặc định của trình biên dịch bằng một tệp tin khác. Mục này được cài đặt trong
-  ** *Options -> Linker -> Config -> Override default* ** tick chọn và chọn tệp tin ** **.icf* **.
+  **Options -> Linker -> Config -> Override default** tick chọn và chọn tệp tin ***.icf**.
 * Chuyển code của usb_received (phiên bản gốc là usb_rx_ok) sang hoàn toàn bằng ASM giúp cố định mã
   khi thay đổi tối ưu của trình biên dịch.
 * Tự cấu hình option byte nếu option byte chưa được cấu hình đúng.
@@ -31,8 +31,8 @@
 * Trở kéo 1K5 từ PC6 (D-) lên nguồn (3.3V).
 
 # Các phiên bản project:
-* ** *USB_STM8S_HSI_V1* **: Phiên bản hỏi vòng USB_Process liên tục trong main giống như phiên bản gốc.
-* ** *USB_STM8S_HSI_V2* **: USB_Process tự xác định và được gọi một cách đặc biệt giống như một ngắt
+* **USB_STM8S_HSI_V1**: Phiên bản hỏi vòng USB_Process liên tục trong main giống như phiên bản gốc.
+* **USB_STM8S_HSI_V2**: USB_Process tự xác định và được gọi một cách đặc biệt giống như một ngắt
   hệ trống (Nhưng nó chạy ở chế độ không phải ngắt và tất cả các ngắt khác đều có thể chiếm quyền
   sử dụng CPU của nó).
 
