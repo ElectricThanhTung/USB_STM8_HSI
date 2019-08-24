@@ -9,7 +9,7 @@
   RC đã được tinh chỉnh lên tần số xấp xỉ 16.5MHz (11 chu kỳ máy).
 * Có thể sử dụng các chân còn lại của PORTC vào mục đích khác (Input hay Output đều được). Trong phiên
   bản gốc, 2 đường tín hiệu USB được nối vào PORTC và do cấu trúc các lệnh ASM đã viết của USB bản gốc
-  khiến các chân còn lại không thể được sử dụng được. Phiên bản nâng
+  khiến các chân còn lại không thể sử dụng được. Phiên bản nâng
   cấp này đã khắc phục được nhược điểm trên.
 * Cố định địa chỉ của chức năng usb_rx và usb_tx giúp chương trình chạy ổn định, không bị thay đổi thời
   gian thực thi khi thay đổi các phần khác của chương trình. Để làm được điều này tôi đã thay đổi
@@ -32,7 +32,7 @@
 
 # Các phiên bản project:
 * **USB_STM8S_HSI_V1**: Phiên bản hỏi vòng USB_Process liên tục trong main giống như phiên bản gốc.
-* **USB_STM8S_HSI_V2**: USB_Process tự xác định và được gọi một cách đặc biệt giống như một ngắt
+* **USB_STM8S_HSI_V2**: USB_Process tự xác định và được tự động gọi một cách đặc biệt giống như một ngắt
   hệ trống (Nhưng nó chạy ở chế độ không phải ngắt và tất cả các ngắt khác đều có thể chiếm quyền
   sử dụng CPU của nó).
 
