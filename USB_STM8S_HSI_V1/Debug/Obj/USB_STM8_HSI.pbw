@@ -3097,20 +3097,6 @@
     },
     "members": [
       {
-        "ID": "c:iostm8s003f3.h@Ua@FI@PB_CR1_bit",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "PB_CR1_bit",
-        "location": {
-          "column": "1",
-          "line": "318",
-          "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
-        },
-        "name": "PB_CR1_bit",
-        "origin": "system_include",
-        "scope": "_anonymous_iostm8s003f3_h_318_1"
-      },
-      {
         "ID": "c:iostm8s003f3.h@Ua@FI@PB_CR1",
         "What": "FieldDecl",
         "defdec": "Def",
@@ -3121,6 +3107,20 @@
           "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
         },
         "name": "PB_CR1",
+        "origin": "system_include",
+        "scope": "_anonymous_iostm8s003f3_h_318_1"
+      },
+      {
+        "ID": "c:iostm8s003f3.h@Ua@FI@PB_CR1_bit",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "PB_CR1_bit",
+        "location": {
+          "column": "1",
+          "line": "318",
+          "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
+        },
+        "name": "PB_CR1_bit",
         "origin": "system_include",
         "scope": "_anonymous_iostm8s003f3_h_318_1"
       }
@@ -26951,20 +26951,6 @@
     },
     "members": [
       {
-        "ID": "c:iostm8s003f3.h@Ua@FI@TIM1_SR1",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "TIM1_SR1",
-        "location": {
-          "column": "1",
-          "line": "2660",
-          "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
-        },
-        "name": "TIM1_SR1",
-        "origin": "system_include",
-        "scope": "_anonymous_iostm8s003f3_h_2660_1"
-      },
-      {
         "ID": "c:iostm8s003f3.h@Ua@FI@TIM1_SR1_bit",
         "What": "FieldDecl",
         "defdec": "Def",
@@ -26975,6 +26961,20 @@
           "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
         },
         "name": "TIM1_SR1_bit",
+        "origin": "system_include",
+        "scope": "_anonymous_iostm8s003f3_h_2660_1"
+      },
+      {
+        "ID": "c:iostm8s003f3.h@Ua@FI@TIM1_SR1",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "TIM1_SR1",
+        "location": {
+          "column": "1",
+          "line": "2660",
+          "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
+        },
+        "name": "TIM1_SR1",
         "origin": "system_include",
         "scope": "_anonymous_iostm8s003f3_h_2660_1"
       }
@@ -37781,20 +37781,6 @@
     },
     "members": [
       {
-        "ID": "c:iostm8s003f3.h@Ua@FI@CPU_CCR",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "CPU_CCR",
-        "location": {
-          "column": "1",
-          "line": "3761",
-          "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
-        },
-        "name": "CPU_CCR",
-        "origin": "system_include",
-        "scope": "_anonymous_iostm8s003f3_h_3761_1"
-      },
-      {
         "ID": "c:iostm8s003f3.h@Ua@FI@CPU_CCR_bit",
         "What": "FieldDecl",
         "defdec": "Def",
@@ -37805,6 +37791,20 @@
           "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
         },
         "name": "CPU_CCR_bit",
+        "origin": "system_include",
+        "scope": "_anonymous_iostm8s003f3_h_3761_1"
+      },
+      {
+        "ID": "c:iostm8s003f3.h@Ua@FI@CPU_CCR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "CPU_CCR",
+        "location": {
+          "column": "1",
+          "line": "3761",
+          "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\iostm8s003f3.h"
+        },
+        "name": "CPU_CCR",
         "origin": "system_include",
         "scope": "_anonymous_iostm8s003f3_h_3761_1"
       }
@@ -39744,7 +39744,7 @@
     "display": "void copy_data(void)",
     "location": {
       "column": "6",
-      "line": "173",
+      "line": "172",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "copy_data",
@@ -39752,13 +39752,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@5241@F@copy_data@temp",
+    "ID": "c:usb.c@5212@F@copy_data@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
     "location": {
       "column": "17",
-      "line": "212",
+      "line": "211",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "temp",
@@ -39772,7 +39772,7 @@
     "display": "table",
     "location": {
       "column": "20",
-      "line": "316",
+      "line": "315",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "table",
@@ -39786,7 +39786,7 @@
     "display": "void USB_SendData(unsigned char *, unsigned char)",
     "location": {
       "column": "6",
-      "line": "380",
+      "line": "379",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_SendData",
@@ -39794,13 +39794,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@11230@F@USB_SendData@index",
+    "ID": "c:usb.c@11201@F@USB_SendData@index",
     "What": "Variable",
     "defdec": "Def",
     "display": "index",
     "location": {
       "column": "17",
-      "line": "381",
+      "line": "380",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "index",
@@ -39808,13 +39808,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@11337@F@USB_SendData@crc",
+    "ID": "c:usb.c@11279@F@USB_SendData@crc",
     "What": "Variable",
     "defdec": "Def",
     "display": "crc",
     "location": {
       "column": "18",
-      "line": "385",
+      "line": "383",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "crc",
@@ -39822,13 +39822,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@12856@F@USB_SendData@timeStart",
+    "ID": "c:usb.c@12798@F@USB_SendData@timeStart",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeStart",
     "location": {
       "column": "18",
-      "line": "420",
+      "line": "418",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "timeStart",
@@ -39842,7 +39842,7 @@
     "display": "void USB_SendNull(unsigned char)",
     "location": {
       "column": "13",
-      "line": "430",
+      "line": "428",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_SendNull",
@@ -39850,13 +39850,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@13324@F@USB_SendNull@timeStart",
+    "ID": "c:usb.c@13204@F@USB_SendNull@timeStart",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeStart",
     "location": {
       "column": "16",
-      "line": "438",
+      "line": "435",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "timeStart",
@@ -39870,7 +39870,7 @@
     "display": "void usb_send_stall(void)",
     "location": {
       "column": "13",
-      "line": "447",
+      "line": "444",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "usb_send_stall",
@@ -39884,7 +39884,7 @@
     "display": "void USB_Process(void)",
     "location": {
       "column": "6",
-      "line": "453",
+      "line": "450",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_Process",
@@ -39898,7 +39898,7 @@
     "display": "void usb_exit_process(void)",
     "location": {
       "column": "15",
-      "line": "454",
+      "line": "451",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "usb_exit_process",
@@ -39912,7 +39912,7 @@
     "display": "void USB_Received(unsigned char, unsigned char *, unsigned char)",
     "location": {
       "column": "17",
-      "line": "522",
+      "line": "519",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_Received",
@@ -39926,7 +39926,7 @@
     "display": "void remove_bit_stuffed(void)",
     "location": {
       "column": "17",
-      "line": "523",
+      "line": "520",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "remove_bit_stuffed",
@@ -39934,101 +39934,17 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@17015@F@USB_Process@ep",
+    "ID": "c:usb.c@16862@F@USB_Process@ep",
     "What": "Variable",
     "defdec": "Def",
     "display": "ep",
     "location": {
       "column": "19",
-      "line": "535",
+      "line": "532",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "ep",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:io_macros.h@339@macro@__IO_MACROS_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__IO_MACROS_H__",
-    "location": {
-      "column": "9",
-      "line": "11",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
-    },
-    "name": "__IO_MACROS_H__",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:io_macros.h@690@macro@__READ_WRITE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__READ_WRITE",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
-    },
-    "name": "__READ_WRITE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:io_macros.h@784@macro@__READ",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__READ",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
-    },
-    "name": "__READ",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:io_macros.h@823@macro@__WRITE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__WRITE",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
-    },
-    "name": "__WRITE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:io_macros.h@1036@macro@__IO_REG8",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__IO_REG8",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
-    },
-    "name": "__IO_REG8",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:io_macros.h@1399@macro@__IO_REG8_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__IO_REG8_BIT",
-    "location": {
-      "column": "9",
-      "line": "44",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
-    },
-    "name": "__IO_REG8_BIT",
-    "origin": "system_include",
     "scope": null
   },
   {
@@ -41023,6 +40939,90 @@
     },
     "name": "USB_Power",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:io_macros.h@339@macro@__IO_MACROS_H__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__IO_MACROS_H__",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
+    },
+    "name": "__IO_MACROS_H__",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:io_macros.h@690@macro@__READ_WRITE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__READ_WRITE",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
+    },
+    "name": "__READ_WRITE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:io_macros.h@784@macro@__READ",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__READ",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
+    },
+    "name": "__READ",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:io_macros.h@823@macro@__WRITE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__WRITE",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
+    },
+    "name": "__WRITE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:io_macros.h@1036@macro@__IO_REG8",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__IO_REG8",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
+    },
+    "name": "__IO_REG8",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:io_macros.h@1399@macro@__IO_REG8_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__IO_REG8_BIT",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\stm8\\inc\\io_macros.h"
+    },
+    "name": "__IO_REG8_BIT",
+    "origin": "system_include",
     "scope": null
   },
   {
