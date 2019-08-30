@@ -36,14 +36,6 @@
   hệ trống (Nhưng nó chạy ở chế độ không phải ngắt và tất cả các ngắt khác đều có thể chiếm quyền
   sử dụng CPU của nó).
 
-# Các vấn đề khác:
-* Vẫn chưa thể tách bit nhồi trực tiếp trong usb_rx. Tôi cũng đã phát triển được thuật toán tách
-  bit nhồi trực tiếp trong project này và nó chỉ tốn 4 chu kỳ để thực thi nhưng nó vẫn là chưa đủ
-  để có thể sử dụng. Nếu bạn sử dụng thạch anh tần số 24MHz (16 chu kỳ) bạn hoàn toàn có thể thêm vào.
-  sau đây là ví dụ các lệnh tôi đã viết để kiểm tra và tách bit nhồi cho bit 0:
-
-![](bit_stuffed.png)
-
 # Thông tin liên hệ:
 * Facebook: https://www.facebook.com/electricthanhtung (thường xuyên kiểm tra)
 * Email: electricthanhtung@gmail.com
