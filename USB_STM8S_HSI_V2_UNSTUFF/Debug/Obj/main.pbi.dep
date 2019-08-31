@@ -1,0 +1,6 @@
+main.pbi: C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\USB\Inc\usb.h \
+  C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\User\Inc\delay.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\io_macros.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\iostm8s003f3.h \
+  C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\User\Inc\main.h \
+  C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\User\Src\main.c

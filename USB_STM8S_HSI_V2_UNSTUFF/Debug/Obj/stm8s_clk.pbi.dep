@@ -1,0 +1,10 @@
+stm8s_clk.pbi: \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\src\stm8s_clk.c \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\inc\stm8s_clk.h \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\inc/stm8s.h \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\inc/stm8s_conf.h \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\inc/stm8s_clk.h \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\inc/stm8s_exti.h \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\inc/stm8s_gpio.h \
+  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\STM8S_VUSB_IAR-ThanhTung_HSI\STM8S_VUSB\FWlib\inc/stm8s_tim1.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
