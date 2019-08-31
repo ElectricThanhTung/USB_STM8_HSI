@@ -1,8 +1,8 @@
 ﻿# Giới thiệu:
-* Đây là phiên bản sửa đổi và nâng cấp của phiên bản gốc tác giả người Nga ZiB
+* Đây là phiên bản sửa đổi và nâng cấp của phiên bản gốc tác giả người Nga **ZiB**
   Project gốc: https://github.com/ZiB/STM8S-USB/blob/master/device/usb/usb.c
 * Phiên bản này đã được sử đổi và nâng cấp để chạy bằng dao động nội RC và chuyển
-  sang dùng trình biên dịch IAR.
+  sang dùng trình biên dịch **IAR**.
 
 # Các sửa đổi trong phiên bản:
 * Có thể hoạt động với dao động nội RC và bỏ hoàn toàn không cần đến thạch anh. Dao động
