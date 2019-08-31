@@ -34,11 +34,19 @@
 * **USB_STM8S_HSI_V1**: Phiên bản hỏi vòng USB_Process liên tục trong main giống như phiên bản gốc.
   Phiên bản này tách bit nhồi sau khi nhận dữ liệu thô USB.
 * **USB_STM8S_HSI_V2**: USB_Process tự xác định và được tự động gọi một cách đặc biệt giống như một ngắt
-  hệ trống (Nhưng nó chạy ở chế độ không phải ngắt và tất cả các ngắt khác đều có thể chiếm quyền
-  sử dụng CPU của nó).
+  hệ thống và có mức ưu tiên là **Level 2** (Chỉ sau ngắt **input capture TIM1_CH2 - Level 3**).
   Phiên bản này tách bit nhồi sau khi nhận dữ liệu thô USB.
 * **USB_STM8S_HSI_V2_UNSTUFF**: Giống với phiên bản **USB_STM8S_HSI_V2** nhưng có khả năng tách bit nhồi
   trực tiếp trong usb_rx. (Khuyên dùng phiên bản này).
+
+# Các ngắt:
+* Ngắt input capture TIM1_CH2 được sử dụng để xác định thời điểm nhận dữ liệu đồng thời đo khoảng thời gian
+  từ khi có yêu cầu ngắt cho đến khi vào được ngắt. Giá trị thời gian đo được này dùng để canh chỉnh thời điểm
+  bắt đầu lấy mẫu dữ liệu trên 2 đường USB. **Ngắt này có mức ưu tiên cao nhất (Level 3)**.
+* Đối vơi phiên bản **USB_STM8S_HSI_V2** và **USB_STM8S_HSI_V2_UNSTUFF** USB_Process được gọi giả lập như 1 ngắt
+  và có mức ưu tiên là **Level 2 (Chỉ sau ưu tiên của TIM1_CH2)**. USB_Received được gọi trong USB_Process nên nó
+  cũng tính chất như USB_Process.
+* Tất cả các ngắt còn lại được đặt mức ưu tiên giống nhau và ở **Level 1**.
 
 # Thông tin liên hệ:
 * Facebook: https://www.facebook.com/electricthanhtung (thường xuyên kiểm tra)
