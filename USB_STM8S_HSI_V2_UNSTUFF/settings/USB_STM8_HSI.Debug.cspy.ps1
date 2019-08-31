@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\settings\USB_STM8_HSI.Debug.general.xcl" --backend -f "C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\settings\USB_STM8_HSI.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\settings\USB_STM8_HSI.Debug.general.xcl" --backend -f "D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\settings\USB_STM8_HSI.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\settings\USB_STM8_HSI.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\yeula\Desktop\USB_STM8S_HSI_V2\settings\USB_STM8_HSI.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\settings\USB_STM8_HSI.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\settings\USB_STM8_HSI.Debug.driver.xcl" 
 }

@@ -74,6 +74,16 @@ static void OptionByte_Init(){
   }
 }
 
+static void ITC_Init(){
+  ITC_SPR1 = 0x55;
+  ITC_SPR2 = 0x55;
+  ITC_SPR3 = 0x55;
+  ITC_SPR4 = 0x57;
+  ITC_SPR5 = 0x55;
+  ITC_SPR6 = 0x55;
+  ITC_SPR7 = 0x55;
+}
+
 static void GPIO_Init(){
   PC_CR2 &= 0x3F;
   PC_CR1 &= 0x3F;
@@ -101,6 +111,7 @@ void USB_Disconnect(){
 void USB_Init(){
   OptionByte_Init();
   CLK_Init();
+  ITC_Init();
   TIM_Init();
   GPIO_Init();
   usb.state = USB_STATE_IDLE;

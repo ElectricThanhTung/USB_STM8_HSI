@@ -5,121 +5,50 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\User\Src\delay.c</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\USB\Src\usb_received.s</file>
-            <file>$PROJ_DIR$\USB\Src\usb.c</file>
-            <file>$PROJ_DIR$\Linker\lnkstm8s003f3.icf</file>
-            <file>$PROJ_DIR$\USB\Src\usb_process.s</file>
-            <file>$PROJ_DIR$\USB\Src\usb_rx.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\usb_process.o</file>
             <file>$PROJ_DIR$\USB\Src\usb_tx.s</file>
+            <file>$PROJ_DIR$\USB\Src\usb_process.s</file>
+            <file>$PROJ_DIR$\User\Src\delay.c</file>
             <file>$PROJ_DIR$\User\Src\main.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\remove_bit_stuffed.o</file>
-            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\USB_STM8_HSI.pbd</file>
+            <file>$PROJ_DIR$\USB\Src\remove_bit_stuffed.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\usb_received.o</file>
+            <file>$PROJ_DIR$\Linker\lnkstm8s003f3.icf</file>
+            <file>$PROJ_DIR$\USB\Src\usb.c</file>
+            <file>$PROJ_DIR$\USB\Src\usb_received.s</file>
+            <file>$PROJ_DIR$\USB\Src\usb_rx.s</file>
+            <file>$PROJ_DIR$\User\Inc\main.h</file>
+            <file>$PROJ_DIR$\USB\Inc\usb_desc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\usb.xcl</file>
+            <file>$PROJ_DIR$\USB\Inc\usb_def.h</file>
             <file>$PROJ_DIR$\Debug\Obj\usb.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\usb.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
-            <file>$PROJ_DIR$\Debug\List\USB_STM8_HSI.map</file>
+            <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.xcl</file>
             <file>$PROJ_DIR$\Debug\Obj\usb_tx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\USB_STM8_HSI.pbd</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\iostm8s003f3.h</file>
+            <file>$PROJ_DIR$\User\Inc\delay.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\USB_STM8_HSI.out</file>
+            <file>$PROJ_DIR$\USB\Inc\usb.h</file>
+            <file>$PROJ_DIR$\Debug\List\USB_STM8_HSI.map</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\remove_bit_stuffed.o</file>
             <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
             <file>$PROJ_DIR$\Debug\Obj\usb_rx.o</file>
-            <file>$PROJ_DIR$\Debug\Exe\USB_STM8_HSI.out</file>
-            <file>$PROJ_DIR$\USB\Src\remove_bit_stuffed.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\usb.__cstat.et</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\usb.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\iostm8s003f3.h</file>
-            <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\delay.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\usb_process.o</file>
             <file>$PROJ_DIR$\Debug\Exe\USB_STM8_HSI.hex</file>
-            <file>$PROJ_DIR$\Debug\Obj\delay.xcl</file>
-            <file>$PROJ_DIR$\User\Inc\delay.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\User\Inc\main.h</file>
-            <file>$PROJ_DIR$\USB\Inc\usb.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\usb_received.o</file>
-            <file>$PROJ_DIR$\USB\Inc\usb_def.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
-            <file>$PROJ_DIR$\USB\Inc\usb_desc.h</file>
+            <file>$PROJ_DIR$\main.c</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\User\Src\delay.c</name>
+            <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
-                    <name>ICCSTM8</name>
-                    <file> 35</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 28</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 25</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 21</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 17</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\USB\Src\usb_received.s</name>
-            <outputs>
-                <tool>
-                    <name>ASTM8</name>
-                    <file> 33</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\USB\Src\usb.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 12</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 22</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 13</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 31 23 24 29 32 34 36</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\USB\Src\usb_process.s</name>
-            <outputs>
-                <tool>
-                    <name>ASTM8</name>
-                    <file> 26</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\USB\Src\usb_rx.s</name>
-            <outputs>
-                <tool>
-                    <name>ASTM8</name>
-                    <file> 18</file>
+                    <name>ILINK</name>
+                    <file> 26 28</file>
                 </tool>
             </outputs>
         </file>
@@ -128,7 +57,33 @@
             <outputs>
                 <tool>
                     <name>ASTM8</name>
-                    <file> 16</file>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\USB\Src\usb_process.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\User\Src\delay.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18</file>
                 </tool>
             </outputs>
         </file>
@@ -137,49 +92,21 @@
             <outputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 21</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 17</file>
+                    <file> 34</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 30</file>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 31 23 24 29 32</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 19 15</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\USB_STM8_HSI.out</name>
-            <outputs>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 27</file>
-                </tool>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 15</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 4 35 21 12 26 33 18 16 14 10</file>
+                    <file> 11 24 17 25 27</file>
                 </tool>
             </inputs>
         </file>
@@ -188,7 +115,80 @@
             <outputs>
                 <tool>
                     <name>ASTM8</name>
-                    <file> 9</file>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\USB\Src\usb.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 16</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 11 24 17 25 27 15 12</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\USB\Src\usb_received.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\USB\Src\usb_rx.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\USB_STM8_HSI.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 28</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 7 20 34 16 0 6 32 19 22 29</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
                 </tool>
             </outputs>
         </file>

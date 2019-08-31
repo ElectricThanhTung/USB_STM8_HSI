@@ -13,6 +13,13 @@ void USB_Received(unsigned char endpoint, unsigned char *buffer, unsigned char l
   
 }
 
+#pragma vector = TIM4_OVR_UIF_vector
+__interrupt void TIM4_ISR(){
+  TIM4_SR = 0x00;
+  PD_ODR = ~PD_ODR;
+  delay_us(60);
+}
+
 void main(){
   CLK_CKDIVR = 0;
 //  GPIO_Init();
@@ -20,6 +27,6 @@ void main(){
   delay_ms(50);
   USB_Init();
   while(1){
-    //asm("WFI");         // CPU Sleep
+    asm("WFI");         // CPU Sleep
   }
 }
