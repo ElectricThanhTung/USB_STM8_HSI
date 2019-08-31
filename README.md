@@ -34,7 +34,7 @@
 * **USB_STM8S_HSI_V1**: Phiên bản hỏi vòng USB_Process liên tục trong main giống như phiên bản gốc.
   Phiên bản này tách bit nhồi sau khi nhận dữ liệu thô USB.
 * **USB_STM8S_HSI_V2**: USB_Process tự xác định và được tự động gọi một cách đặc biệt giống như một ngắt
-  hệ thống và có mức ưu tiên là **Level 2** (Chỉ sau ngắt **input capture TIM1_CH2 - Level 3**).
+  hệ thống và có mức ưu tiên là **Level 2 (Chỉ sau ngắt input capture TIM1_CH2 - Level 3**).
   Phiên bản này tách bit nhồi sau khi nhận dữ liệu thô USB.
 * **USB_STM8S_HSI_V2_UNSTUFF**: Giống với phiên bản **USB_STM8S_HSI_V2** nhưng có khả năng tách bit nhồi
   trực tiếp trong usb_rx. (Khuyên dùng phiên bản này).
