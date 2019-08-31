@@ -1,12 +1,13 @@
 ﻿# Giới thiệu:
 * Đây là phiên bản sửa đổi và nâng cấp của phiên bản gốc tác giả người Nga **ZiB**
   Project gốc: https://github.com/ZiB/STM8S-USB/blob/master/device/usb/usb.c
-* Phiên bản này đã được sử đổi và nâng cấp để chạy bằng dao động nội RC và chuyển
+* Phiên bản này đã được sử đổi và nâng cấp để chạy bằng **dao động nội RC** và chuyển
   sang dùng trình biên dịch **IAR**.
 
 # Các sửa đổi trong phiên bản:
-* Có thể hoạt động với dao động nội RC và bỏ hoàn toàn không cần đến thạch anh. Dao động
-  RC đã được tinh chỉnh lên tần số xấp xỉ 16.5MHz (11 chu kỳ máy).
+* Có thể hoạt động với **dao động nội RC** và bỏ hoàn toàn không cần đến thạch anh. Dao động
+  RC đã được tinh chỉnh lên tần số xấp xỉ **16.5MHz** (11 chu kỳ máy).
+* Thêm khẳ năng **tách bt nhồi**.
 * Có thể sử dụng các chân còn lại của PORTC vào mục đích khác (Input hay Output đều được). Trong phiên
   bản gốc, 2 đường tín hiệu USB được nối vào PORTC và do cấu trúc các lệnh ASM đã viết của USB bản gốc
   khiến các chân còn lại không thể sử dụng được. Phiên bản nâng
@@ -18,7 +19,6 @@
 * Chuyển code của usb_received (phiên bản gốc là usb_rx_ok) sang hoàn toàn bằng ASM giúp cố định mã
   khi thay đổi tối ưu của trình biên dịch.
 * Tự cấu hình option byte nếu option byte chưa được cấu hình đúng.
-* Thêm chức năng tách bit nhồi sau khi nhận được dữ liệu.
 * Khắc phục lỗi kết nối lại không nhận USB khi MCU luôn được cấp nguồn liên tục.
 * Hoàn thiện các mô tả và thêm mô tả chuỗi. Có thể mô tả được chuỗi dài tùy ý.
 * Và còn nhiều các nâng cấp nhỏ khác mà tôi chưa nhớ hết.
