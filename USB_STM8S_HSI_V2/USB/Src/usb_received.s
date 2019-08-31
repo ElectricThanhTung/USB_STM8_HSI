@@ -142,14 +142,30 @@ state_setup_compare_ok:                                                         
   MOV usb + 10, #0                                                              // usb.data_count = 0;
   MOV usb + 1, #USB_EVENT_RECEIVE_SETUP_DATA                                    // usb.event = USB_EVENT_RECEIVE_SETUP_DATA
 //  MOV UDRF, #1                                                                  // UDRF = 1
-  CALL usb_send_ack                                                             // usb_send_ack()
   LD A, usb_rx_buffer + 8                                                       // A = usb_rx_buffer[8]
   CLRW X
   LD XL, A
   LDW usb + 6, X                                                                // usb.wLength = usb_rx_buffer[8]
+  CALL usb_send_ack                                                             // usb_send_ack()
+  LD A, usb_rx_buffer + 2
+  CP A, #0x21
+  JRNE check_UEPF
+  LD A, usb_rx_buffer + 3
+  CP A, #0x09
+  JREQ return_func
+check_UEPF:
   TNZ UEPF
   JRNE usb_process                                                              // if(UEPF != 0)
+return_func:
   IRET
+  
+usb_process:
+  MOV UEPF, #0
+  LDW X, #goto_usb_process
+  PUSHW X
+  PUSH #0x20
+  POP CC                                                                        // CC = 0x20
+  RET
   
 pid_data_1:
   LD A, usb_rx_count
@@ -180,15 +196,6 @@ pid_ack:
   
 pid_nack:
   IRET
-
-return_func:
-  IRET
   
-usb_process:
-  MOV UEPF, #0
-  LDW X, #goto_usb_process
-  PUSHW X
-  PUSH #0x20
-  POP CC                                                                        // CC = 0x20
-  RET
   END
+  
