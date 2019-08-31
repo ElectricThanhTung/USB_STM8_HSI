@@ -68,6 +68,14 @@ goto_pid_nack:
   JP pid_ack
   
 pid_out:
+  LD A, usb_rx_buffer + 2
+  AND A, #0x7F                                                                  // A = usb_rx_buffer[2] & 0x7F
+  JREQ pid_out_compare_ok                                                     // if(usb_rx_buffer[2] & 0x7F == 0)
+  CP A, usb + 2
+  JRNE pid_out_break                                                          // if(usb_rx_buffer[2] & 0x7F != usb.address)
+pid_out_compare_ok:
+  MOV usb, #USB_STATE_OUT
+pid_out_break:
   IRET
 
 pid_setup:

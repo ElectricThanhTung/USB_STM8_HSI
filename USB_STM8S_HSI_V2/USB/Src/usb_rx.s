@@ -1,6 +1,12 @@
 
-#define DEBUG                   0
+#define DEBUG_ENABLE            0
 #define DEBUG_PORT              0x500F          // PD
+
+#if DEBUG_ENABLE
+#define DEBUG                   CPL DEBUG_PORT
+#else
+#define DEBUG                   CPL 0x5019
+#endif
 
   NAME usb_rx
 
@@ -100,11 +106,7 @@ delay_end:
   JRA           bit_0_begin             ;2,  2
 
 bit_7_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2
   LD            A, (Y)                  ;1,  2
   AND           A, #$C0                 ;1,
@@ -116,11 +118,7 @@ bit_7_begin:
   NOP
 
 bit_0_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2  SP+1??
   LD            A, (Y)                  ;1,  2  ?PC,??Z,N
   AND           A, #$C0                 ;1,
@@ -133,28 +131,20 @@ bit_0_begin:
   NOP
 
 bit_1_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2
   LD            A, (Y)                  ;1,  2
   AND           A, #$C0                 ;1,
   JREQ          end_rx                  ;1/2,2
   XOR           A, ($01, SP)            ;1,  2
   LD            ($01, SP), A            ;1,  2
-  incw          X                       ;1,  1
+  INCW          X                       ;1,  1
   NOP
   NOP
   NOP
   
 bit_2_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2
   LD            A, (Y)                  ;1,  2
   AND           A, #$C0                 ;1,
@@ -179,17 +169,8 @@ end_rx:
 
   JP            usb_received_2          ;4,  3
   
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#endif
-  IRET
-  
 bit_3_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2
   LD            A, (Y)                  ;1,  2
   AND           A, #$C0                 ;1,
@@ -202,11 +183,7 @@ bit_3_begin:
   NOP
   
 bit_4_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2
   LD            A, (Y)                  ;1,  2
   AND           A, #$C0                 ;1,
@@ -219,28 +196,20 @@ bit_4_begin:
   NOP
   
 bit_5_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2
   LD            A, (Y)                  ;1,  2
   AND           A, #$C0                 ;1,  2
   JREQ          end_rx                  ;1/2,2
   XOR           A, ($01, SP)            ;1,  2
   LD            ($01, SP), A            ;1,  2
-  dec           ($02,SP)                ;1,  2
+  DEC           ($02, SP)               ;1,  2
   JREQ          end_rx                  ;1/2,2
   NOP
 //  NOP
 
 bit_6_begin:
-#if DEBUG
-  CPL           L:DEBUG_PORT            ;1,  4
-#else
-  CPL           L:$5019
-#endif
+  DEBUG
   SRL           ($01, SP)               ;1,  2
   LD            A, (Y)                  ;1,  2
   AND           A, #$C0                 ;1,
@@ -254,5 +223,3 @@ bit_6_begin:
   SECTION VREGS:DATA:REORDER:NOROOT(0)
 
   END
-
-
