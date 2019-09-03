@@ -129,7 +129,7 @@
                 <RecentlyUsedMenus>1</RecentlyUsedMenus>
                 <MenuShadows>1</MenuShadows>
                 <ShowAllMenusAfterDelay>1</ShowAllMenusAfterDelay>
-                <CommandsUsage>22010000090013860000050000000D800000020000000E810000070000001F810000020000000284000002000000118600000D00000046810000CB00000008860000010000005D86000038000000</CommandsUsage>
+                <CommandsUsage>26010000090013860000050000000D800000020000001F810000020000000E81000007000000118600000D000000028400000200000046810000CF0000005D860000380000000886000001000000</CommandsUsage>
             </MFCToolBarParameters>
             <CommandManager>
                 <CommandsWithoutImages>0B000D8400000F84000008840000FFFFFFFF54840000328100001C81000009840000838600005886000037870000</CommandsWithoutImages>
@@ -697,7 +697,7 @@
             <IarPane-34086>
                 <expressions>
                     <item>usb</item>
-                    <item />
+                    <item></item>
                 </expressions>
                 <col-names>
                     <item>Expression</item>
