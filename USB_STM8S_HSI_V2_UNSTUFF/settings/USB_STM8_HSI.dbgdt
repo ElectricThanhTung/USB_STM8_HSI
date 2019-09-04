@@ -698,7 +698,7 @@
             <IarPane-34086>
                 <expressions>
                     <item>usb</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

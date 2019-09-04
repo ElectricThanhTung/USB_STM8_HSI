@@ -200,10 +200,6 @@ void copy_data(){
   asm("LD ($6, X), A");
   asm("LD A, usb_rx_buffer + 9");
   asm("LD ($7, X), A");
-  asm("LD A, usb_rx_buffer + 10");
-  asm("LD ($8, X), A");
-  asm("LD A, usb_rx_buffer + 11");
-  asm("LD ($9, X), A");
   
 //  unsigned char *buffer = &usb.rx_buffer[usb.data_count];
 //  buffer[0] = usb_rx_buffer[2];
