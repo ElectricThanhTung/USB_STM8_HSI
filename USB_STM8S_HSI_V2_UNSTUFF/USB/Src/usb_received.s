@@ -100,6 +100,7 @@ pid_setup_break:
   IRET
   
 pid_in:
+  MOV usb, #USB_STATE_IN
   LD A, usb_rx_buffer + 2
   AND A, #0x7F                                                                  // A = usb_rx_buffer[2] & 0x7F
   JREQ pid_in_compare_ok                                                        // if(usb_rx_buffer[2] & 0x7F == 0)
@@ -121,8 +122,9 @@ pid_data_0:
   CP A, #USB_STATE_OUT
   JREQ state_out_compare_ok                                                     // if(usb.state != USB_STATE_OUT)
   CP A, #USB_STATE_SETUP
-  JREQ state_setup_compare_ok
-  IRET
+//  JREQ state_setup_compare_ok
+//  IRET
+  JP state_setup_compare_ok
 state_out_compare_ok:                                                           // if(usb.state == USB_STATE_OUT)
   LD A, pid_data_old
   CP A, #USB_PID_DATA1

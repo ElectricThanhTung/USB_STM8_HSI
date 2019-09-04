@@ -12,7 +12,6 @@ unsigned char usb_rx_count;
 unsigned char pid_data_old;
 volatile unsigned char UEPF = 1, UDRF = 1;
 volatile unsigned int USB_TimerTick = 0;
-unsigned char data_buffer[8];
 
 extern void usb_tx();
 
@@ -201,6 +200,10 @@ void copy_data(){
   asm("LD ($6, X), A");
   asm("LD A, usb_rx_buffer + 9");
   asm("LD ($7, X), A");
+  asm("LD A, usb_rx_buffer + 10");
+  asm("LD ($8, X), A");
+  asm("LD A, usb_rx_buffer + 11");
+  asm("LD ($9, X), A");
   
 //  unsigned char *buffer = &usb.rx_buffer[usb.data_count];
 //  buffer[0] = usb_rx_buffer[2];
@@ -215,8 +218,8 @@ void copy_data(){
 //  buffer[8] = usb_rx_buffer[10];
 //  buffer[9] = usb_rx_buffer[11];
   usb.data_count += 8;
-  unsigned char temp = usb.wLength;
-  if(usb.data_count >= temp){
+  unsigned char temp = usb.data_count;
+  if(temp >= usb.wLength){
     usb.received = 1;
     usb.tx_lenght = 0;
     UDRF = 1;
@@ -385,6 +388,7 @@ const unsigned int table[] = {
 
 void USB_SendData(unsigned char *buffer, unsigned char length){
   unsigned char index;
+  usb.state = USB_STATE_IN;
   data_sync = USB_PID_DATA1;
   while(length > 0){
     unsigned int crc = 0xFFFF;
@@ -424,7 +428,7 @@ void USB_SendData(unsigned char *buffer, unsigned char length){
     //usb_calc_crc16(&usb.tx_buffer[2], (unsigned char) (usb.tx_lenght - 4));
     unsigned int timeStart = USB_TimerTick;
     while(usb.tx_lenght){
-      if((unsigned int)(USB_TimerTick - timeStart) > (100 / TimerTickStep)){
+      if((usb.state != USB_STATE_IN) || ((unsigned int)(USB_TimerTick - timeStart) > (100 / TimerTickStep))){
         usb.tx_lenght = 0;
         return;
       }
@@ -433,6 +437,7 @@ void USB_SendData(unsigned char *buffer, unsigned char length){
 }
 
 static void USB_SendNull(unsigned char PID_DATA){
+  usb.state = USB_STATE_IN;
   usb.tx_buffer[0] = 0x80;
   usb.tx_buffer[1] = PID_DATA;
   usb.tx_buffer[2] = 0;
@@ -441,7 +446,7 @@ static void USB_SendNull(unsigned char PID_DATA){
   
   unsigned int timeStart = USB_TimerTick;
   while(usb.tx_lenght){
-    if((unsigned int)(USB_TimerTick - timeStart) > (100 / TimerTickStep)){
+    if((usb.state != USB_STATE_IN) || ((unsigned int)(USB_TimerTick - timeStart) > (100 / TimerTickStep))){
       usb.tx_lenght = 0;
       return;
     }
@@ -525,6 +530,7 @@ void USB_Process(){
   if(usb.received){
     extern void USB_Received(unsigned char endpoint, unsigned char *buffer, unsigned char length);
     usb.ack = 0;
+    //remove_bit_stuffed();
     USB_SendNull(USB_PID_DATA1);
     usb.received = 0;
     usb.event = USB_EVENT_NO;
@@ -534,6 +540,6 @@ void USB_Process(){
 //        return;
 //    }
     unsigned char ep = usb.endpoint;
-    USB_Received(ep, usb_rx_buffer, usb.wLength);
+    USB_Received(ep, usb.rx_buffer, usb.wLength);
   }
 }

@@ -20,6 +20,6 @@ void main(){
   delay_ms(50);
   USB_Init();
   while(1){
-    asm("WFI");         // CPU Sleep
+    //asm("WFI");         // CPU Sleep
   }
 }
