@@ -168,7 +168,8 @@ pid_data_1_sync_ok:
   MOV pid_data_old, #USB_PID_DATA1                                              // pid_data_old = USB_PID_DATA1
   IRET
 usb_rx_count_compare_ok:
-  MOV usb + 9, #0
+  MOV usb + 9, #0                                                               // usb.tx_length = 0
+  MOV usb, #USB_STATE_IDLE
   CALL usb_send_ack
   IRET
   
