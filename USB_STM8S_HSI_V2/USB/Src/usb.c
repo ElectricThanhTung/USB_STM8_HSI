@@ -16,16 +16,7 @@ unsigned char data_buffer[8];
 
 extern void usb_tx();
 
-static const unsigned char usb_report_null[] = {
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-};
+static const unsigned char usb_report_null[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
 struct usb_type{
   volatile unsigned char state;                                                 // 0

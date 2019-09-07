@@ -39364,7 +39364,7 @@
     "display": "usb_type",
     "location": {
       "column": "8",
-      "line": "30",
+      "line": "21",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "members": [
@@ -39375,7 +39375,7 @@
         "display": "state",
         "location": {
           "column": "26",
-          "line": "31",
+          "line": "22",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "state",
@@ -39389,7 +39389,7 @@
         "display": "event",
         "location": {
           "column": "26",
-          "line": "32",
+          "line": "23",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "event",
@@ -39403,7 +39403,7 @@
         "display": "device_address",
         "location": {
           "column": "26",
-          "line": "33",
+          "line": "24",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "device_address",
@@ -39417,7 +39417,7 @@
         "display": "endpoint",
         "location": {
           "column": "26",
-          "line": "34",
+          "line": "25",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "endpoint",
@@ -39431,7 +39431,7 @@
         "display": "received",
         "location": {
           "column": "26",
-          "line": "35",
+          "line": "26",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "received",
@@ -39445,7 +39445,7 @@
         "display": "ack",
         "location": {
           "column": "26",
-          "line": "36",
+          "line": "27",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "ack",
@@ -39459,7 +39459,7 @@
         "display": "wLength",
         "location": {
           "column": "25",
-          "line": "37",
+          "line": "28",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "wLength",
@@ -39473,7 +39473,7 @@
         "display": "rx_lenght",
         "location": {
           "column": "26",
-          "line": "38",
+          "line": "29",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "rx_lenght",
@@ -39487,7 +39487,7 @@
         "display": "tx_lenght",
         "location": {
           "column": "26",
-          "line": "39",
+          "line": "30",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "tx_lenght",
@@ -39501,7 +39501,7 @@
         "display": "data_count",
         "location": {
           "column": "26",
-          "line": "40",
+          "line": "31",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "data_count",
@@ -39515,7 +39515,7 @@
         "display": "tx_buffer",
         "location": {
           "column": "17",
-          "line": "42",
+          "line": "33",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "tx_buffer",
@@ -39529,7 +39529,7 @@
         "display": "rx_buffer",
         "location": {
           "column": "17",
-          "line": "43",
+          "line": "34",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "rx_buffer",
@@ -39543,7 +39543,7 @@
         "display": "usb",
         "location": {
           "column": "3",
-          "line": "44",
+          "line": "35",
           "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
         },
         "name": "usb",
@@ -39562,7 +39562,7 @@
     "display": "void CLK_Init(void)",
     "location": {
       "column": "13",
-      "line": "46",
+      "line": "37",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "CLK_Init",
@@ -39576,7 +39576,7 @@
     "display": "void OptionByte_Init(void)",
     "location": {
       "column": "13",
-      "line": "55",
+      "line": "46",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "OptionByte_Init",
@@ -39584,13 +39584,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@1882@F@OptionByte_Init@optionByte",
+    "ID": "c:usb.c@1854@F@OptionByte_Init@optionByte",
     "What": "Variable",
     "defdec": "Def",
     "display": "optionByte",
     "location": {
       "column": "26",
-      "line": "57",
+      "line": "48",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "optionByte",
@@ -39598,13 +39598,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@2196@F@OptionByte_Init@i",
+    "ID": "c:usb.c@2168@F@OptionByte_Init@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "23",
-      "line": "67",
+      "line": "58",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "i",
@@ -39618,7 +39618,7 @@
     "display": "void ITC_Init(void)",
     "location": {
       "column": "13",
-      "line": "77",
+      "line": "68",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "ITC_Init",
@@ -39632,7 +39632,7 @@
     "display": "void GPIO_Init(void)",
     "location": {
       "column": "13",
-      "line": "87",
+      "line": "78",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "GPIO_Init",
@@ -39646,7 +39646,7 @@
     "display": "void TIM_Init(void)",
     "location": {
       "column": "13",
-      "line": "93",
+      "line": "84",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "TIM_Init",
@@ -39660,7 +39660,7 @@
     "display": "void USB_Disconnect(void)",
     "location": {
       "column": "6",
-      "line": "103",
+      "line": "94",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_Disconnect",
@@ -39674,7 +39674,7 @@
     "display": "void USB_Init(void)",
     "location": {
       "column": "6",
-      "line": "111",
+      "line": "102",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_Init",
@@ -39688,7 +39688,7 @@
     "display": "void usb_send_nack(void)",
     "location": {
       "column": "6",
-      "line": "127",
+      "line": "118",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "usb_send_nack",
@@ -39696,13 +39696,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@3342@F@usb_send_nack@data",
+    "ID": "c:usb.c@3314@F@usb_send_nack@data",
     "What": "Variable",
     "defdec": "Def",
     "display": "data",
     "location": {
       "column": "17",
-      "line": "128",
+      "line": "119",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "data",
@@ -39716,7 +39716,7 @@
     "display": "void usb_send_ack(void)",
     "location": {
       "column": "6",
-      "line": "146",
+      "line": "137",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "usb_send_ack",
@@ -39724,13 +39724,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@3649@F@usb_send_ack@data",
+    "ID": "c:usb.c@3621@F@usb_send_ack@data",
     "What": "Variable",
     "defdec": "Def",
     "display": "data",
     "location": {
       "column": "17",
-      "line": "147",
+      "line": "138",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "data",
@@ -39744,7 +39744,7 @@
     "display": "void usb_send_answer(void)",
     "location": {
       "column": "6",
-      "line": "166",
+      "line": "157",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "usb_send_answer",
@@ -39758,7 +39758,7 @@
     "display": "void copy_data(void)",
     "location": {
       "column": "6",
-      "line": "183",
+      "line": "174",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "copy_data",
@@ -39766,13 +39766,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@5398@F@copy_data@temp",
+    "ID": "c:usb.c@5370@F@copy_data@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
     "location": {
       "column": "17",
-      "line": "222",
+      "line": "213",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "temp",
@@ -39786,7 +39786,7 @@
     "display": "table",
     "location": {
       "column": "20",
-      "line": "326",
+      "line": "317",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "table",
@@ -39800,7 +39800,7 @@
     "display": "void USB_SendData(unsigned char *, unsigned char)",
     "location": {
       "column": "6",
-      "line": "390",
+      "line": "381",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_SendData",
@@ -39808,13 +39808,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@11387@F@USB_SendData@index",
+    "ID": "c:usb.c@11359@F@USB_SendData@index",
     "What": "Variable",
     "defdec": "Def",
     "display": "index",
     "location": {
       "column": "17",
-      "line": "391",
+      "line": "382",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "index",
@@ -39822,13 +39822,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@11494@F@USB_SendData@crc",
+    "ID": "c:usb.c@11466@F@USB_SendData@crc",
     "What": "Variable",
     "defdec": "Def",
     "display": "crc",
     "location": {
       "column": "18",
-      "line": "395",
+      "line": "386",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "crc",
@@ -39836,13 +39836,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@13013@F@USB_SendData@timeStart",
+    "ID": "c:usb.c@12985@F@USB_SendData@timeStart",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeStart",
     "location": {
       "column": "19",
-      "line": "430",
+      "line": "421",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "timeStart",
@@ -39856,7 +39856,7 @@
     "display": "void USB_SendNull(unsigned char)",
     "location": {
       "column": "13",
-      "line": "440",
+      "line": "431",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_SendNull",
@@ -39864,13 +39864,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@13483@F@USB_SendNull@timeStart",
+    "ID": "c:usb.c@13455@F@USB_SendNull@timeStart",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeStart",
     "location": {
       "column": "17",
-      "line": "448",
+      "line": "439",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "timeStart",
@@ -39884,7 +39884,7 @@
     "display": "void usb_send_stall(void)",
     "location": {
       "column": "13",
-      "line": "457",
+      "line": "448",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "usb_send_stall",
@@ -39898,7 +39898,7 @@
     "display": "void USB_Process(void)",
     "location": {
       "column": "6",
-      "line": "463",
+      "line": "454",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_Process",
@@ -39912,7 +39912,7 @@
     "display": "void usb_exit_process(void)",
     "location": {
       "column": "15",
-      "line": "464",
+      "line": "455",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "usb_exit_process",
@@ -39926,7 +39926,7 @@
     "display": "void USB_Received(unsigned char, unsigned char *, unsigned char)",
     "location": {
       "column": "17",
-      "line": "532",
+      "line": "523",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "USB_Received",
@@ -39940,7 +39940,7 @@
     "display": "void remove_bit_stuffed(void)",
     "location": {
       "column": "17",
-      "line": "533",
+      "line": "524",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "remove_bit_stuffed",
@@ -39948,13 +39948,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@17178@F@USB_Process@ep",
+    "ID": "c:usb.c@17150@F@USB_Process@ep",
     "What": "Variable",
     "defdec": "Def",
     "display": "ep",
     "location": {
       "column": "19",
-      "line": "545",
+      "line": "536",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V1\\USB\\Src\\usb.c"
     },
     "name": "ep",

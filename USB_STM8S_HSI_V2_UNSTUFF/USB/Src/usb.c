@@ -15,16 +15,7 @@ volatile unsigned char USB_TimerTick = 0;
 
 extern void usb_tx();
 
-static const unsigned char usb_report_null[] = {
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-  0x00,
-};
+static const unsigned char usb_report_null[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
 struct usb_type{
   volatile unsigned char state;                                                 // 0
@@ -526,7 +517,6 @@ void USB_Process(){
   if(usb.received){
     extern void USB_Received(unsigned char endpoint, unsigned char *buffer, unsigned char length);
     usb.ack = 0;
-    //remove_bit_stuffed();
     USB_SendNull(USB_PID_DATA1);
     usb.received = 0;
     usb.event = USB_EVENT_NO;
