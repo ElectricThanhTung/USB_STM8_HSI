@@ -39391,7 +39391,7 @@
     "defdec": "Def",
     "display": "USB_TimerTick",
     "location": {
-      "column": "23",
+      "column": "24",
       "line": "14",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
@@ -39654,7 +39654,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@1850@F@OptionByte_Init@optionByte",
+    "ID": "c:usb.c@1851@F@OptionByte_Init@optionByte",
     "What": "Variable",
     "defdec": "Def",
     "display": "optionByte",
@@ -39668,7 +39668,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@2164@F@OptionByte_Init@i",
+    "ID": "c:usb.c@2165@F@OptionByte_Init@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -39766,7 +39766,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@3310@F@usb_send_nack@data",
+    "ID": "c:usb.c@3311@F@usb_send_nack@data",
     "What": "Variable",
     "defdec": "Def",
     "display": "data",
@@ -39794,7 +39794,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@3617@F@usb_send_ack@data",
+    "ID": "c:usb.c@3618@F@usb_send_ack@data",
     "What": "Variable",
     "defdec": "Def",
     "display": "data",
@@ -39836,7 +39836,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@5244@F@copy_data@temp",
+    "ID": "c:usb.c@5245@F@copy_data@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
@@ -39878,7 +39878,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@11233@F@USB_SendData@index",
+    "ID": "c:usb.c@11234@F@USB_SendData@index",
     "What": "Variable",
     "defdec": "Def",
     "display": "index",
@@ -39892,7 +39892,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@11340@F@USB_SendData@crc",
+    "ID": "c:usb.c@11341@F@USB_SendData@crc",
     "What": "Variable",
     "defdec": "Def",
     "display": "crc",
@@ -39906,12 +39906,12 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@12859@F@USB_SendData@timeStart",
+    "ID": "c:usb.c@12860@F@USB_SendData@timeStart",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeStart",
     "location": {
-      "column": "18",
+      "column": "19",
       "line": "425",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
@@ -39934,12 +39934,12 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@13327@F@USB_SendNull@timeStart",
+    "ID": "c:usb.c@13330@F@USB_SendNull@timeStart",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeStart",
     "location": {
-      "column": "16",
+      "column": "17",
       "line": "443",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
@@ -40004,7 +40004,7 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@16952@F@USB_Process@ep",
+    "ID": "c:usb.c@16959@F@USB_Process@ep",
     "What": "Variable",
     "defdec": "Def",
     "display": "ep",

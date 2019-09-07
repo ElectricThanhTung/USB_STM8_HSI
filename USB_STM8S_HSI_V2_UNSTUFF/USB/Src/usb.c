@@ -11,7 +11,7 @@ unsigned char usb_rx_buffer[14];
 unsigned char usb_rx_count;
 unsigned char pid_data_old;
 volatile unsigned char UEPF = 1, UDRF = 1;
-volatile unsigned int USB_TimerTick = 0;
+volatile unsigned char USB_TimerTick = 0;
 
 extern void usb_tx();
 
@@ -422,9 +422,9 @@ void USB_SendData(unsigned char *buffer, unsigned char length){
       length = 0;
     }
     //usb_calc_crc16(&usb.tx_buffer[2], (unsigned char) (usb.tx_lenght - 4));
-    unsigned int timeStart = USB_TimerTick;
+    unsigned char timeStart = USB_TimerTick;
     while(usb.tx_lenght){
-      if((usb.state != USB_STATE_IN) || ((unsigned int)(USB_TimerTick - timeStart) > (100 / TimerTickStep))){
+      if((usb.state != USB_STATE_IN) || ((unsigned char)(USB_TimerTick - timeStart) > (100 / TimerTickStep))){
         usb.tx_lenght = 0;
         return;
       }
@@ -440,9 +440,9 @@ static void USB_SendNull(unsigned char PID_DATA){
   usb.tx_buffer[3] = 0;
   usb.tx_lenght = 4;
   
-  unsigned int timeStart = USB_TimerTick;
+  unsigned char timeStart = USB_TimerTick;
   while(usb.tx_lenght){
-    if((usb.state != USB_STATE_IN) || ((unsigned int)(USB_TimerTick - timeStart) > (100 / TimerTickStep))){
+    if((usb.state != USB_STATE_IN) || ((unsigned char)(USB_TimerTick - timeStart) > (100 / TimerTickStep))){
       usb.tx_lenght = 0;
       return;
     }
@@ -530,9 +530,9 @@ void USB_Process(){
     USB_SendNull(USB_PID_DATA1);
     usb.received = 0;
     usb.event = USB_EVENT_NO;
-//    unsigned int timeStart = USB_TimerTick;
+//    unsigned char timeStart = USB_TimerTick;
 //    while(!usb.ack){
-//      if((unsigned int)(USB_TimerTick - timeStart) > 5)
+//      if((unsigned char)(USB_TimerTick - timeStart) > 5)
 //        return;
 //    }
     unsigned char ep = usb.endpoint;
