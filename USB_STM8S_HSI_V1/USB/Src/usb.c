@@ -382,7 +382,7 @@ void USB_SendData(unsigned char *buffer, unsigned char length){
   unsigned char index;
   usb.state = USB_STATE_IN;
   data_sync = USB_PID_DATA1;
-  while(length > 0){
+  while(length){
     unsigned int crc = 0xFFFF;
     usb.tx_buffer[0] = 0x80;
     usb.tx_buffer[1] = data_sync;
