@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V3.11.1.207 for STM8                     16/Oct/2019  17:13:18
+# IAR ELF Linker V3.11.1.207 for STM8                     06/Jun/2020  09:05:28
 # Copyright 2010-2019 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,7 +8,7 @@
 #    Map file     =  
 #        D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\Debug\List\USB_STM8_HSI.map
 #    Command line =  
-#        -f C:\Users\yeula\AppData\Local\Temp\EW7BCB.tmp
+#        -f C:\Users\THANHT~1\AppData\Local\Temp\EW3FD2.tmp
 #        (D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\Debug\Obj\delay.o
 #        D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\Debug\Obj\main.o
 #        D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2_UNSTUFF\Debug\Obj\usb.o
