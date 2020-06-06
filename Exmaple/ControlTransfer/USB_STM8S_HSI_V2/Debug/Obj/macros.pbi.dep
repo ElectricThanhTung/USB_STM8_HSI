@@ -1,0 +1,15 @@
+macros.pbi: \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\User\usb.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\User\mcu_gpio.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\User\macros.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\User\asm.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\User\main.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\FWlib\inc\stm8s.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\FWlib\inc\stm8s_tim1.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\FWlib\inc\stm8s_gpio.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\FWlib\inc\stm8s_exti.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\FWlib\inc\stm8s_clk.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\FWlib\inc\stm8s_conf.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\User\global.h \
+  C:\Users\yeula\Desktop\STM8S_VUSB_IAR-ThanhTung\ -\ Copy\STM8S_VUSB\User\macros.c

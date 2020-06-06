@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V3.11.1.207 for STM8                     16/Oct/2019  17:12:24
+# IAR ELF Linker V3.11.1.207 for STM8                     06/Jun/2020  14:37:39
 # Copyright 2010-2019 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,7 +8,7 @@
 #    Map file     =  
 #        D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2\Debug\List\USB_STM8_HSI.map
 #    Command line =  
-#        -f C:\Users\yeula\AppData\Local\Temp\EWA551.tmp
+#        -f C:\Users\THANHT~1\AppData\Local\Temp\EW63BE.tmp
 #        (D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2\Debug\Obj\delay.o
 #        D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2\Debug\Obj\main.o
 #        D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2\Debug\Obj\remove_bit_stuffed.o
@@ -232,53 +232,52 @@ Absolute sections, part 15 of 15:           0x7
   .usb_tx_func.rodata  ro code  0x008200  0x175  usb_tx.o [1]
                               - 0x008375  0x175
 
-"P3-P5":                                  0xcab
+"P3-P5":                                  0xc91
   .near_func.text      ro code  0x008375  0x2f6  usb.o [1]
   .near.rodata         const    0x00866b  0x200  usb.o [1]
-  .near_func.text      ro code  0x00886b  0x15a  usb.o [1]
-  .near_func.text      ro code  0x0089c5  0x14c  usb_received.o [1]
-  .near_func.text      ro code  0x008b11   0x6d  remove_bit_stuffed.o [1]
-  .near_func.text      ro code  0x008b7e   0x6d  usb_process.o [1]
-  .near_func.text      ro code  0x008beb   0x63  usb.o [1]
-  .near_func.text      ro code  0x008c4e   0x5f  usb.o [1]
-  .near_func.text      ro code  0x008cad   0x4d  usb.o [1]
-  .near_func.text      ro code  0x008cfa   0x4d  usb.o [1]
-  .near_func.text      ro code  0x008d47   0x45  usb.o [1]
-  .near_func.text      ro code  0x008d8c   0x37  usb.o [1]
-  .near_func.text      ro code  0x008dc3   0x2e  usb.o [1]
-  .near_func.text      ro code  0x008df1   0x28  init_small.o [4]
-  .iar.init_table      const    0x008e19   0x12  - Linker created -
-  .near_func.text      ro code  0x008e2b   0x20  usb.o [1]
-  .near.rodata         const    0x008e4b   0x1e  usb.o [1]
-  .near_func.text      ro code  0x008e69   0x1e  init_small.o [4]
-  .near_func.text      ro code  0x008e87   0x1d  usb.o [1]
-  .near_func.text      ro code  0x008ea4   0x1d  usb.o [1]
-  .near.rodata         const    0x008ec1   0x1b  usb.o [1]
-  .near.rodata         const    0x008edc   0x1a  usb.o [1]
-  .near_func.text      ro code  0x008ef6   0x1a  delay.o [1]
-  .near_func.text      ro code  0x008f10   0x19  usb.o [1]
-  .near_func.text      ro code  0x008f29   0x18  vreg_util.o [4]
-  .near.rodata         const    0x008f41   0x16  usb.o [1]
-  .near.rodata         const    0x008f57   0x16  usb.o [1]
-  .near_func.text      ro code  0x008f6d   0x14  init.o [4]
-  .near_func.text      ro code  0x008f81   0x14  __dbg_xxexit.o [3]
-  .near_func.text      ro code  0x008f95   0x13  main.o [1]
-  .near_func.text      ro code  0x008fa8   0x13  cstartup.o [4]
-  .near.rodata         const    0x008fbb   0x12  usb.o [1]
-  .near_func.text      ro code  0x008fcd   0x12  delay.o [1]
-  .near_func.text      ro code  0x008fdf    0xe  usb.o [1]
-  .near_func.text      ro code  0x008fed    0xd  usb.o [1]
-  .near.rodata         const    0x008ffa    0x8  usb.o [1]
-  Initializer bytes    const    0x009002    0x7  <for P2-1>
-  .near_func.text      ro code  0x009009    0x5  cexit.o [4]
-  .near.rodata         const    0x00900e    0x4  usb.o [1]
-  .near_func.text      ro code  0x009012    0x3  interrupt.o [4]
-  .near_func.text      ro code  0x009015    0x3  low_level_init.o [4]
-  .near_func.text      ro code  0x009018    0x3  exit.o [4]
-  .near_func.text      ro code  0x00901b    0x3  unhandled_exception.o [4]
-  .near_func.text      ro code  0x00901e    0x1  main.o [1]
-  .near_func.text      ro code  0x00901f    0x1  __dbg_break.o [3]
-                              - 0x009020  0xcab
+  .near_func.text      ro code  0x00886b  0x14c  usb_received.o [1]
+  .near_func.text      ro code  0x0089b7  0x148  usb.o [1]
+  .near_func.text      ro code  0x008aff   0x6d  remove_bit_stuffed.o [1]
+  .near_func.text      ro code  0x008b6c   0x6d  usb_process.o [1]
+  .near_func.text      ro code  0x008bd9   0x63  usb.o [1]
+  .near_func.text      ro code  0x008c3c   0x5f  usb.o [1]
+  .near_func.text      ro code  0x008c9b   0x4d  usb.o [1]
+  .near_func.text      ro code  0x008ce8   0x4d  usb.o [1]
+  .near_func.text      ro code  0x008d35   0x45  usb.o [1]
+  .near_func.text      ro code  0x008d7a   0x37  usb.o [1]
+  .near_func.text      ro code  0x008db1   0x2e  usb.o [1]
+  .near_func.text      ro code  0x008ddf   0x28  init_small.o [4]
+  .iar.init_table      const    0x008e07   0x12  - Linker created -
+  .near_func.text      ro code  0x008e19   0x20  usb.o [1]
+  .near.rodata         const    0x008e39   0x1e  usb.o [1]
+  .near_func.text      ro code  0x008e57   0x1e  init_small.o [4]
+  .near_func.text      ro code  0x008e75   0x1d  usb.o [1]
+  .near_func.text      ro code  0x008e92   0x1d  usb.o [1]
+  .near.rodata         const    0x008eaf   0x1b  usb.o [1]
+  .near.rodata         const    0x008eca   0x1a  usb.o [1]
+  .near_func.text      ro code  0x008ee4   0x1a  delay.o [1]
+  .near_func.text      ro code  0x008efe   0x19  usb.o [1]
+  .near_func.text      ro code  0x008f17   0x18  vreg_util.o [4]
+  .near.rodata         const    0x008f2f   0x16  usb.o [1]
+  .near.rodata         const    0x008f45   0x16  usb.o [1]
+  .near_func.text      ro code  0x008f5b   0x14  init.o [4]
+  .near_func.text      ro code  0x008f6f   0x14  __dbg_xxexit.o [3]
+  .near_func.text      ro code  0x008f83   0x13  main.o [1]
+  .near_func.text      ro code  0x008f96   0x13  cstartup.o [4]
+  .near.rodata         const    0x008fa9   0x12  usb.o [1]
+  .near_func.text      ro code  0x008fbb   0x12  delay.o [1]
+  .near_func.text      ro code  0x008fcd    0xe  usb.o [1]
+  .near_func.text      ro code  0x008fdb    0xd  usb.o [1]
+  Initializer bytes    const    0x008fe8    0x7  <for P2-1>
+  .near_func.text      ro code  0x008fef    0x5  cexit.o [4]
+  .near.rodata         const    0x008ff4    0x4  usb.o [1]
+  .near_func.text      ro code  0x008ff8    0x3  interrupt.o [4]
+  .near_func.text      ro code  0x008ffb    0x3  low_level_init.o [4]
+  .near_func.text      ro code  0x008ffe    0x3  exit.o [4]
+  .near_func.text      ro code  0x009001    0x3  unhandled_exception.o [4]
+  .near_func.text      ro code  0x009004    0x1  main.o [1]
+  .near_func.text      ro code  0x009005    0x1  __dbg_break.o [3]
+                              - 0x009006  0xc91
 
 
 *******************************************************************************
@@ -293,7 +292,7 @@ Zero (__iar_zero_init2)
 
 Copy (__iar_copy_init2)
     1 source range, total size 0x7:
-          0x009002   0x7
+          0x008fe8   0x7
     1 destination range, total size 0x7:
           0x00000c   0x7
 
@@ -310,13 +309,13 @@ D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_STM8S_HSI_V2\Debu
     delay.o                     44
     main.o                      20
     remove_bit_stuffed.o       109
-    usb.o                    1 764      676       75       26
+    usb.o                    1 746      668       75       26
     usb_process.o              109
     usb_received.o             332
     usb_rx.o                   278
     usb_tx.o                   373
     ---------------------------------------------------------
-    Total:                   3 029      676       75       26
+    Total:                   3 011      668       75       26
 
 command line: [2]
     ---------------------------------------------------------
@@ -344,7 +343,7 @@ dlstm8smn.a: [4]
 
     Linker created                       18      256
 -------------------------------------------------------------
-    Grand Total:             3 200      822      343       26
+    Grand Total:             3 182      814      343       26
 
 
 *******************************************************************************
@@ -353,8 +352,8 @@ dlstm8smn.a: [4]
 
 Entry                    Address   Size  Type      Object
 -----                    -------   ----  ----      ------
-.iar.init_table$$Base   0x008e19          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x008e2b          --   Gb  - Linker created -
+.iar.init_table$$Base   0x008e07          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x008e19          --   Gb  - Linker created -
 ?b0                     0x000000         Data  Gb  vregs.o [4]
 ?b1                     0x000001         Data  Gb  vregs.o [4]
 ?b10                    0x00000a         Data  Gb  vregs.o [4]
@@ -373,39 +372,39 @@ Entry                    Address   Size  Type      Object
 ?l0                     0x000000         Data  Gb  vregs.o [4]
 ?l1                     0x000004         Data  Gb  vregs.o [4]
 ?l2                     0x000008         Data  Gb  vregs.o [4]
-?push_w4                0x008f29         Code  Gb  vreg_util.o [4]
+?push_w4                0x008f17         Code  Gb  vreg_util.o [4]
 ?w0                     0x000000         Data  Gb  vregs.o [4]
 ?w1                     0x000002         Data  Gb  vregs.o [4]
 ?w2                     0x000004         Data  Gb  vregs.o [4]
 ?w3                     0x000006         Data  Gb  vregs.o [4]
 ?w4                     0x000008         Data  Gb  vregs.o [4]
 ?w5                     0x00000a         Data  Gb  vregs.o [4]
-CLK_Init                0x008fdf    0xe  Code  Lc  usb.o [1]
+CLK_Init                0x008fcd    0xe  Code  Lc  usb.o [1]
 CLK_PCKENR1             0x0050c7    0x1  Data  Gb  usb.o [1]
 CSTACK$$Base            0x000300          --   Gb  - Linker created -
 CSTACK$$Limit           0x000400          --   Gb  - Linker created -
 FLASH_DUKR              0x005064    0x1  Data  Gb  usb.o [1]
 FLASH_PUKR              0x005062    0x1  Data  Gb  usb.o [1]
-GPIO_Init               0x008f10   0x19  Code  Lc  usb.o [1]
+GPIO_Init               0x008efe   0x19  Code  Lc  usb.o [1]
 INTVEC$$Base            0x008000          --   Gb  - Linker created -
 INTVEC$$Limit           0x008080          --   Gb  - Linker created -
-ITC_Init                0x008e87   0x1d  Code  Lc  usb.o [1]
-OptionByte_Init         0x008beb   0x63  Code  Lc  usb.o [1]
+ITC_Init                0x008e75   0x1d  Code  Lc  usb.o [1]
+OptionByte_Init         0x008bd9   0x63  Code  Lc  usb.o [1]
 OptionByte_Init{1}{2}::optionByte
                         0x00000e    0x5  Data  Lc  usb.o [1]
-Region$$Table$$Base     0x008e19          --   Gb  - Linker created -
-Region$$Table$$Limit    0x008e2b          --   Gb  - Linker created -
+Region$$Table$$Base     0x008e07          --   Gb  - Linker created -
+Region$$Table$$Limit    0x008e19          --   Gb  - Linker created -
 TIM1_ARRH               0x005262    0x1  Data  Gb  usb.o [1]
 TIM1_ARRL               0x005263    0x1  Data  Gb  usb.o [1]
-TIM_Init                0x008ea4   0x1d  Code  Lc  usb.o [1]
+TIM_Init                0x008e92   0x1d  Code  Lc  usb.o [1]
 UDRF                    0x00000d    0x1  Data  Gb  usb.o [1]
 UEPF                    0x00000c    0x1  Data  Gb  usb.o [1]
-USB_Disconnect          0x008e2b   0x20  Code  Gb  usb.o [1]
-USB_Init                0x008dc3   0x2e  Code  Gb  usb.o [1]
-USB_Process             0x00886b  0x15a  Code  Gb  usb.o [1]
-USB_Received            0x00901e    0x1  Code  Gb  main.o [1]
+USB_Disconnect          0x008e19   0x20  Code  Gb  usb.o [1]
+USB_Init                0x008db1   0x2e  Code  Gb  usb.o [1]
+USB_Process             0x0089b7  0x148  Code  Gb  usb.o [1]
+USB_Received            0x009004    0x1  Code  Gb  main.o [1]
 USB_SendData            0x008375  0x2f6  Code  Gb  usb.o [1]
-USB_SendNull            0x008d8c   0x37  Code  Lc  usb.o [1]
+USB_SendNull            0x008d7a   0x37  Code  Lc  usb.o [1]
 USB_TimerTick           0x000056    0x1  Data  Gb  usb.o [1]
 _A_CLK_CCOR             0x0050c9    0x1  Data  Gb  usb.o [1]
 _A_CLK_CKDIVR           0x0050c6    0x1  Data  Gb  usb.o [1]
@@ -428,51 +427,50 @@ _A_TIM1_CCMR2           0x005259    0x1  Data  Gb  usb.o [1]
 _A_TIM1_IER             0x005254    0x1  Data  Gb  usb.o [1]
 _A_TIM1_SMCR            0x005252    0x1  Data  Gb  usb.o [1]
 _A_WWDG_CR              0x0050d1    0x1  Data  Gb  usb.o [1]
-__DebugBreak            0x00901f    0x1  Code  Gb  __dbg_break.o [3]
-__exit                  0x008f81   0x14  Code  Gb  __dbg_xxexit.o [3]
-__iar_copy_init2        0x008df1         Code  Gb  init_small.o [4]
-__iar_data_init2        0x008f6d   0x14  Code  Gb  init.o [4]
-__iar_program_start     0x008fa8         Code  Gb  cstartup.o [4]
+__DebugBreak            0x009005    0x1  Code  Gb  __dbg_break.o [3]
+__exit                  0x008f6f   0x14  Code  Gb  __dbg_xxexit.o [3]
+__iar_copy_init2        0x008ddf         Code  Gb  init_small.o [4]
+__iar_data_init2        0x008f5b   0x14  Code  Gb  init.o [4]
+__iar_program_start     0x008f96         Code  Gb  cstartup.o [4]
 __iar_unhandled_exception
-                        0x00901b         Code  Gb  unhandled_exception.o [4]
-__iar_zero_init2        0x008e69         Code  Gb  init_small.o [4]
+                        0x009001         Code  Gb  unhandled_exception.o [4]
+__iar_zero_init2        0x008e57         Code  Gb  init_small.o [4]
 __intvec                0x008000         Data  Gb  interrupt.o [4]
-__low_level_init        0x009015    0x3  Code  Gb  low_level_init.o [4]
-_exit                   0x009009         Code  Gb  cexit.o [4]
+__low_level_init        0x008ffb    0x3  Code  Gb  low_level_init.o [4]
+_exit                   0x008fef         Code  Gb  cexit.o [4]
 _interrupt_14           0x008080         Code  Gb  usb_rx.o [1]
-copy_data               0x008c4e   0x5f  Code  Gb  usb.o [1]
+copy_data               0x008c3c   0x5f  Code  Gb  usb.o [1]
 data_buffer             0x000048    0x8  Data  Gb  usb.o [1]
 data_sync               0x000052    0x1  Data  Lc  usb.o [1]
-delay_ms                0x008ef6   0x1a  Code  Gb  delay.o [1]
-delay_us                0x008fcd   0x12  Code  Gb  delay.o [1]
-exit                    0x009018    0x3  Code  Gb  exit.o [4]
-goto_usb_process        0x008b7e         Code  Gb  usb_process.o [1]
-main                    0x008f95   0x13  Code  Gb  main.o [1]
+delay_ms                0x008ee4   0x1a  Code  Gb  delay.o [1]
+delay_us                0x008fbb   0x12  Code  Gb  delay.o [1]
+exit                    0x008ffe    0x3  Code  Gb  exit.o [4]
+goto_usb_process        0x008b6c         Code  Gb  usb_process.o [1]
+main                    0x008f83   0x13  Code  Gb  main.o [1]
 pid_data_old            0x000055    0x1  Data  Gb  usb.o [1]
-remove_bit_stuffed      0x008b11         Code  Gb  remove_bit_stuffed.o [1]
+remove_bit_stuffed      0x008aff         Code  Gb  remove_bit_stuffed.o [1]
 table                   0x00866b  0x200  Data  Gb  usb.o [1]
 usb                     0x000013   0x27  Data  Gb  usb.o [1]
 usb_configuration_descriptor
-                        0x008ec1   0x1b  Data  Lc  usb.o [1]
-usb_device_descriptor   0x008fbb   0x12  Data  Lc  usb.o [1]
-usb_received_2          0x0089c5         Code  Gb  usb_received.o [1]
-usb_report_descriptor   0x008e4b   0x1e  Data  Lc  usb.o [1]
-usb_report_null         0x008ffa    0x8  Data  Lc  usb.o [1]
+                        0x008eaf   0x1b  Data  Lc  usb.o [1]
+usb_device_descriptor   0x008fa9   0x12  Data  Lc  usb.o [1]
+usb_received_2          0x00886b         Code  Gb  usb_received.o [1]
+usb_report_descriptor   0x008e39   0x1e  Data  Lc  usb.o [1]
 usb_rx                  0x008080         Code  Gb  usb_rx.o [1]
 usb_rx_buffer           0x00003a    0xe  Data  Gb  usb.o [1]
 usb_rx_count            0x000054    0x1  Data  Gb  usb.o [1]
-usb_send_ack            0x008cfa   0x4d  Code  Gb  usb.o [1]
-usb_send_answer         0x008d47   0x45  Code  Gb  usb.o [1]
-usb_send_nack           0x008cad   0x4d  Code  Gb  usb.o [1]
-usb_send_stall          0x008fed    0xd  Code  Lc  usb.o [1]
+usb_send_ack            0x008ce8   0x4d  Code  Gb  usb.o [1]
+usb_send_answer         0x008d35   0x45  Code  Gb  usb.o [1]
+usb_send_nack           0x008c9b   0x4d  Code  Gb  usb.o [1]
+usb_send_stall          0x008fdb    0xd  Code  Lc  usb.o [1]
 usb_string_descriptor_device
-                        0x008edc   0x1a  Data  Lc  usb.o [1]
+                        0x008eca   0x1a  Data  Lc  usb.o [1]
 usb_string_descriptor_language
-                        0x00900e    0x4  Data  Lc  usb.o [1]
+                        0x008ff4    0x4  Data  Lc  usb.o [1]
 usb_string_descriptor_serial
-                        0x008f57   0x16  Data  Lc  usb.o [1]
+                        0x008f45   0x16  Data  Lc  usb.o [1]
 usb_string_descriptor_vendor
-                        0x008f41   0x16  Data  Lc  usb.o [1]
+                        0x008f2f   0x16  Data  Lc  usb.o [1]
 usb_tx                  0x008200         Code  Gb  usb_tx.o [1]
 usb_tx_buffer_pointer   0x000050    0x2  Data  Gb  usb.o [1]
 usb_tx_count            0x000053    0x1  Data  Gb  usb.o [1]
@@ -483,8 +481,8 @@ usb_tx_count            0x000053    0x1  Data  Gb  usb.o [1]
 [3] = dbgstm8smd.a
 [4] = dlstm8smn.a
 
-  3 200 bytes of readonly  code memory
-    822 bytes of readonly  data memory
+  3 182 bytes of readonly  code memory
+    814 bytes of readonly  data memory
     343 bytes of readwrite data memory (+ 26 absolute)
 
 Errors: none

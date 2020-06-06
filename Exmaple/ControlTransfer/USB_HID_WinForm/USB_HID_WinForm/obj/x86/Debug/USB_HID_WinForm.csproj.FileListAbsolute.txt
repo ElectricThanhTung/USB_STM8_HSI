@@ -1,0 +1,11 @@
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\bin\x86\Debug\USB_HID_WinForm.exe
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\bin\x86\Debug\USB_HID_WinForm.pdb
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\bin\x86\Debug\USB.dll
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\bin\x86\Debug\USB.pdb
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\obj\x86\Debug\USB_HID_WinForm.csprojAssemblyReference.cache
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\obj\x86\Debug\USB_HID_WinForm.Form1.resources
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\obj\x86\Debug\USB_HID_WinForm.Properties.Resources.resources
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\obj\x86\Debug\USB_HID_WinForm.csproj.GenerateResource.cache
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\obj\x86\Debug\USB_HID_WinForm.csproj.CopyComplete
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\obj\x86\Debug\USB_HID_WinForm.exe
+D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\USB_HID_WinForm\USB_HID_WinForm\obj\x86\Debug\USB_HID_WinForm.pdb

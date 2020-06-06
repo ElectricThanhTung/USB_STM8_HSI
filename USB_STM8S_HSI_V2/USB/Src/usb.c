@@ -16,8 +16,6 @@ unsigned char data_buffer[8];
 
 extern void usb_tx();
 
-static const unsigned char usb_report_null[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-
 struct usb_type{
   volatile unsigned char state;                                                 // 0
   volatile unsigned char event;                                                 // 1
@@ -428,6 +426,94 @@ void USB_SendData(unsigned char *buffer, unsigned char length){
   }
 }
 
+void USB_WriteBuf(unsigned char *buffer, unsigned char length){
+  unsigned char start = 0;
+  usb.state = USB_STATE_IN;
+  data_sync = USB_PID_DATA1;
+  while(length){
+    unsigned int crc = 0xFFFF;
+    usb.tx_buffer[0] = 0x80;
+    usb.tx_buffer[1] = data_sync;
+    if(data_sync == USB_PID_DATA1)
+      data_sync = USB_PID_DATA0;
+    else
+      data_sync = USB_PID_DATA1;
+    if(start == 0){
+      start = 1;
+      
+      usb.tx_buffer[2] = length; crc = table[(crc ^ length) & 0xFF] ^ (crc >> 8);
+      
+      if((length % 8) == 7)
+        length++;
+      
+      if(length >= 7){
+        usb.tx_buffer[3] = buffer[0]; crc = table[(crc ^ buffer[0]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[4] = buffer[1]; crc = table[(crc ^ buffer[1]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[5] = buffer[2]; crc = table[(crc ^ buffer[2]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[6] = buffer[3]; crc = table[(crc ^ buffer[3]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[7] = buffer[4]; crc = table[(crc ^ buffer[4]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[8] = buffer[5]; crc = table[(crc ^ buffer[5]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[9] = buffer[6]; crc = table[(crc ^ buffer[6]) & 0xFF] ^ (crc >> 8);
+        crc = ~crc;
+        usb.tx_buffer[10] = crc;
+        usb.tx_buffer[11] = crc >> 8;
+        buffer += 7;
+        length -= 7;
+        usb.tx_lenght = 12;
+      }
+      else{
+        unsigned char index;
+        for(index = 3; index < (3 + length); index++){
+          crc = table[(crc ^ *buffer) & 0xFF] ^ (crc >> 8);
+          usb.tx_buffer[index] = *buffer++;
+        }
+        crc = ~crc;
+        usb.tx_buffer[index++] = crc;
+        usb.tx_buffer[index] = crc >> 8;
+        usb.tx_lenght = length + 5;
+        length = 0;
+      }
+    }
+    else{
+      if(length >= 8){
+        usb.tx_buffer[2] = buffer[0]; crc = table[(crc ^ buffer[0]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[3] = buffer[1]; crc = table[(crc ^ buffer[1]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[4] = buffer[2]; crc = table[(crc ^ buffer[2]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[5] = buffer[3]; crc = table[(crc ^ buffer[3]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[6] = buffer[4]; crc = table[(crc ^ buffer[4]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[7] = buffer[5]; crc = table[(crc ^ buffer[5]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[8] = buffer[6]; crc = table[(crc ^ buffer[6]) & 0xFF] ^ (crc >> 8);
+        usb.tx_buffer[9] = buffer[7]; crc = table[(crc ^ buffer[7]) & 0xFF] ^ (crc >> 8);
+        crc = ~crc;
+        usb.tx_buffer[10] = crc;
+        usb.tx_buffer[11] = crc >> 8;
+        buffer += 8;
+        length -= 8;
+        usb.tx_lenght = 12;
+      }
+      else{
+        unsigned char index;
+        for(index = 2; index < (2 + length); index++){
+          crc = table[(crc ^ *buffer) & 0xFF] ^ (crc >> 8);
+          usb.tx_buffer[index] = *buffer++;
+        }
+        crc = ~crc;
+        usb.tx_buffer[index++] = crc;
+        usb.tx_buffer[index] = crc >> 8;
+        usb.tx_lenght = length + 4;
+        length = 0;
+      }
+    }
+    unsigned char timeStart = USB_TimerTick;
+    while(usb.tx_lenght){
+      if((unsigned char)(USB_TimerTick - timeStart) > (100 / TimerTickStep)){
+        usb.tx_lenght = 0;
+        return;
+      }
+    }
+  }
+}
+
 static void USB_SendNull(unsigned char PID_DATA){
   usb.state = USB_STATE_IN;
   usb.tx_buffer[0] = 0x80;
@@ -516,8 +602,10 @@ void USB_Process(){
       if(usb.rx_buffer[3] == 0x0A)
         usb_send_stall();
     }
-    else if(usb.rx_buffer[2] == USBRQ_CLASS_FROM_INTERFACE)
-      USB_SendData((unsigned char *)usb_report_null, ARRAY_LENGHT(usb_report_null));
+    else if(usb.rx_buffer[2] == USBRQ_CLASS_FROM_INTERFACE){
+//      static const unsigned char usb_report_null[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+//      USB_SendData((unsigned char *)usb_report_null, ARRAY_LENGHT(usb_report_null));
+    }
   }
   if(usb.received){
     extern void USB_Received(unsigned char endpoint, unsigned char *buffer, unsigned char length);
