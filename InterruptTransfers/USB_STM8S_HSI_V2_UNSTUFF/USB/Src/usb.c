@@ -433,11 +433,13 @@ void USB_SendData(unsigned char *buffer, unsigned char length){
 unsigned char USB_SendPacket(unsigned char *buffer, unsigned char length){
   usb.state = USB_STATE_IN;
   data_sync = USB_PID_DATA1;
-  while(length){
+  if(length > 8)
+    length = 8;
+  if(usb.len_ep1 == 0){
     unsigned int crc = 0xFFFF;
     usb.tx_ep1[0] = 0x80;
     usb.tx_ep1[1] = data_sync;
-    if(length >= 8){
+    if(length == 8){
       usb.tx_ep1[2] = buffer[0]; crc = table[(crc ^ buffer[0]) & 0xFF] ^ (crc >> 8);
       usb.tx_ep1[3] = buffer[1]; crc = table[(crc ^ buffer[1]) & 0xFF] ^ (crc >> 8);
       usb.tx_ep1[4] = buffer[2]; crc = table[(crc ^ buffer[2]) & 0xFF] ^ (crc >> 8);
@@ -449,7 +451,6 @@ unsigned char USB_SendPacket(unsigned char *buffer, unsigned char length){
       crc = ~crc;
       usb.tx_ep1[10] = crc;
       usb.tx_ep1[11] = crc >> 8;
-      buffer += 8;
       length -= 8;
       usb.len_ep1 = 12;
     }
@@ -465,16 +466,9 @@ unsigned char USB_SendPacket(unsigned char *buffer, unsigned char length){
       usb.len_ep1 = length + 4;
       length = 0;
     }
-    //usb_calc_crc16(&usb.tx_ep1[2], (unsigned char) (usb.len_ep1 - 4));
-    unsigned char timeStart = USB_TimerTick;
-    while(usb.len_ep1){
-      if((usb.state != USB_STATE_IN) || ((unsigned char)(USB_TimerTick - timeStart) > (100 / TimerTickStep))){
-        usb.len_ep1 = 0;
-        return 0;
-      }
-    }
+    return 1;
   }
-  return 1;
+  return 0;
 }
 
 void USB_WaitBusy(){

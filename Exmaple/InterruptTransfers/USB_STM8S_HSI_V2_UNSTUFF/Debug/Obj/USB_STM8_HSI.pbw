@@ -39850,13 +39850,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@13195@F@USB_SendPacket@crc",
+    "ID": "c:usb.c@13237@F@USB_SendPacket@crc",
     "What": "Variable",
     "defdec": "Def",
     "display": "crc",
     "location": {
       "column": "18",
-      "line": "437",
+      "line": "439",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "crc",
@@ -39864,30 +39864,16 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@14163@F@USB_SendPacket@index",
+    "ID": "c:usb.c@14185@F@USB_SendPacket@index",
     "What": "Variable",
     "defdec": "Def",
     "display": "index",
     "location": {
       "column": "21",
-      "line": "457",
+      "line": "458",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "index",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:usb.c@14574@F@USB_SendPacket@timeStart",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "timeStart",
-    "location": {
-      "column": "19",
-      "line": "469",
-      "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
-    },
-    "name": "timeStart",
     "origin": "project_file",
     "scope": null
   },
@@ -39898,7 +39884,7 @@
     "display": "void USB_WaitBusy(void)",
     "location": {
       "column": "6",
-      "line": "480",
+      "line": "474",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "USB_WaitBusy",
@@ -39912,7 +39898,7 @@
     "display": "void USB_SendNull(unsigned char)",
     "location": {
       "column": "13",
-      "line": "484",
+      "line": "478",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "USB_SendNull",
@@ -39920,13 +39906,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@15105@F@USB_SendNull@timeStart",
+    "ID": "c:usb.c@14824@F@USB_SendNull@timeStart",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeStart",
     "location": {
       "column": "17",
-      "line": "492",
+      "line": "486",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "timeStart",
@@ -39940,7 +39926,7 @@
     "display": "void usb_send_stall(void)",
     "location": {
       "column": "13",
-      "line": "501",
+      "line": "495",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "usb_send_stall",
@@ -39954,7 +39940,7 @@
     "display": "void USB_Process(void)",
     "location": {
       "column": "6",
-      "line": "507",
+      "line": "501",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "USB_Process",
@@ -39968,7 +39954,7 @@
     "display": "void usb_exit_process(void)",
     "location": {
       "column": "15",
-      "line": "508",
+      "line": "502",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "usb_exit_process",
@@ -39976,13 +39962,13 @@
     "scope": null
   },
   {
-    "ID": "c:usb.c@15521@F@USB_Process@ep",
+    "ID": "c:usb.c@15240@F@USB_Process@ep",
     "What": "Variable",
     "defdec": "Def",
     "display": "ep",
     "location": {
       "column": "17",
-      "line": "509",
+      "line": "503",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "ep",
@@ -39996,7 +39982,7 @@
     "display": "void USB_Received(unsigned char, unsigned char *, unsigned char)",
     "location": {
       "column": "19",
-      "line": "582",
+      "line": "576",
       "path": "D:\\Drive\\OneDrive\\Tai_Lieu\\USB\\USB_Soft\\STM8S\\USB_STM8_HSI\\Exmaple\\InterruptTransfers\\USB_STM8S_HSI_V2_UNSTUFF\\USB\\Src\\usb.c"
     },
     "name": "USB_Received",
