@@ -1,7 +1,0 @@
-main.pbi: \
-  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\Exmaple\Transmit_And_Receive_Data\USB_STM8S_HSI_V2_UNSTUFF\USB\Inc\usb.h \
-  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\Exmaple\Transmit_And_Receive_Data\USB_STM8S_HSI_V2_UNSTUFF\User\Inc\delay.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\io_macros.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\iostm8s003f3.h \
-  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\Exmaple\Transmit_And_Receive_Data\USB_STM8S_HSI_V2_UNSTUFF\User\Inc\main.h \
-  D:\Drive\OneDrive\Tai_Lieu\USB\USB_Soft\STM8S\USB_STM8_HSI\Exmaple\Transmit_And_Receive_Data\USB_STM8S_HSI_V2_UNSTUFF\User\Src\main.c

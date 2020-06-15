@@ -1,0 +1,51 @@
+
+  NAME goto_usb_process
+
+  EXTERN USB_Process
+  EXTERN UEPF
+
+  PUBLIC goto_usb_process
+
+  SECTION `.near_func.text`:CODE:REORDER:NOROOT(0)
+  CODE
+goto_usb_process:
+  PUSH 0x00
+  PUSH 0x01
+  PUSH 0x02
+  PUSH 0x03
+  PUSH 0x04
+  PUSH 0x05
+  PUSH 0x06
+  PUSH 0x07
+  PUSH 0x08
+  PUSH 0x09
+  PUSH 0x0A
+  PUSH 0x0B
+  PUSH 0x0C
+  PUSH 0x0D
+  PUSH 0x0E
+  PUSH 0x0F
+  CALL USB_Process
+  POP 0x0F
+  POP 0x0E
+  POP 0x0D
+  POP 0x0C
+  POP 0x0B
+  POP 0x0A
+  POP 0x09
+  POP 0x08
+  POP 0x07
+  POP 0x06
+  POP 0x05
+  POP 0x04
+  POP 0x03
+  POP 0x02
+  POP 0x01
+  POP 0x00
+  POP CC
+  POP A
+  POPW X
+  POPW Y
+  MOV UEPF, #1
+  RETF
+  END
